@@ -1,4 +1,5 @@
 class School
+  
   attr_accessor :roster, :school_name
   attr_reader :grade
   
@@ -14,5 +15,9 @@ class School
   def grade(grade)
     @roster[grade]
   end 
+  
+  def sort
+    @roster.each { |grade, students| @roster[grade] = students.sort }
+  end
   
 end
