@@ -7,5 +7,7 @@ class School
     @roster = Hash.new{|key, value| key[value] = []}
   end
 
-  
+  def add_student(name, grade)
+    
+  end
 end
