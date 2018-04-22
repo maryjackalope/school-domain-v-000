@@ -3,6 +3,9 @@ class School
   attr_reader :grade
   
   def initialize(school_name)
+    @school_name = school_name
+    @roster = Hash.new{|key, value| key[value] = []}
   end
 
+  
 end
